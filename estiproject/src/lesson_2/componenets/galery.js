@@ -12,12 +12,9 @@ export default function Galery(){
     return(
         <> 
             <h1>gallery!!!!🌌</h1>
-         
-          
-            <button onClick={() =>setIndex(index-1)}>⬅️</button> 
-            
+            <button onClick={() =>{if (index>0)setIndex(index-1)}}>🔙</button> 
             <img src={images[index]}></img>
-            <button onClick={() => setIndex(index+1)}>➡️</button>
+            <button onClick={() =>{if (index<4) setIndex(index+1)}}>🔜</button>
         </>
     )
 }
