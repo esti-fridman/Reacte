@@ -1,12 +1,15 @@
 
 import Galery from "../../lesson_2/componenets/galery"
-export default function Servises(){
+import '../i18next'
+import { withNamespaces } from 'react-i18next';
+function Home({t}){
     return(
         <>
             <Galery></Galery>
-             <p>אנחנו בדף הבית</p>
+             <p>{t("home")}</p>
 
         </>
    
     )
 }
+export default withNamespaces()(Home) ;

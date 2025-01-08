@@ -1,6 +1,8 @@
-
-export default function Servises(){
+import '../i18next'
+import { withNamespaces } from 'react-i18next';
+ function Servises({t}){
     return(
-        <p>אנחנו בדף שירות לקוחות</p>
+        <p>{t("servic")}</p>
     )
 }
+export default withNamespaces()(Servises)

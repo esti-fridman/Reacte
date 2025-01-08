@@ -1,7 +1,10 @@
 
+import '../i18next'
+import { withNamespaces } from 'react-i18next';
 
-export default function About(){
+function About({t}){
     return(
-        <p>אנחנו בדף אודותינו</p>
+        <p>{t("about")}</p>
     )
 }
+export default withNamespaces()(About)
