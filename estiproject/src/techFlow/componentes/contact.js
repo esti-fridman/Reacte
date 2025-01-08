@@ -1,8 +1,10 @@
 import { useNavigate } from "react-router-dom"
 import '../i18next'
-import { withNamespaces } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
-function Contact({t}){
+function Contact(){
+    const{t}=useTranslation();  
+
     const navigate=useNavigate();
 
     const goToThankyou=()=>{
@@ -11,9 +13,9 @@ function Contact({t}){
     return(
         <>
         <h1>{t("contact")}</h1>
-        <button onClick={goToThankyou}>צור קשר</button>
+        <button onClick={goToThankyou}>{t("contact-btn")}</button>
         </>
         
     )
 }
-export default withNamespaces()(Contact)
+export default Contact

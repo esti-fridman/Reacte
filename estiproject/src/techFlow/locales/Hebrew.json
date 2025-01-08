@@ -1,8 +1,16 @@
 {
-    "about": "אנחנו בדף אודותינו",
-     "thankYou":"💕💕💕💕💕תודה שהצטרפת אלינו!!",
-     "waiting": "מחכים לך!!",
-    "services": "אנחנו בדף שירות לקוחות",
+    "about": "👌👌👌👌אנחנו בדף אודותינו",
+    "thankYou":"💕💕💕💕💕תודה שהצטרפת אלינו!!",
+    "waiting": "✨✨מחכים לך!!",
+    "services": "🙌🙌🙌😎😎אנחנו בדף שירות לקוחות",
     "contact": "😍😍😍אנחנו בדף צור קשר😍😍😍",
-    "home": "אנחנו בדף הבית"
+    "home": "אנחנו בדף הבית",
+    "gallery":"גלריה!!!!🌌",
+
+    "contact-btn":"❤️שלח",
+
+    "homePage":"דף הבית",
+    "contactPage":"צור קשר",
+    "servicPage":"שירותים",
+    "aboutPage":"אודות"
 }

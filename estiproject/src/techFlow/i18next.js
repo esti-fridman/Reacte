@@ -1,5 +1,5 @@
 import i18n from "i18next";
-import { reactI18nextModule } from "react-i18next";
+import { initReactI18next } from 'react-i18next';
 
 import Hebrew from '../techFlow/locales/Hebrew.json';
 import English from '../techFlow/locales/English.json' ;
@@ -17,7 +17,7 @@ const resources = {
 };
 
 i18n
-  .use(reactI18nextModule) // passes i18n down to react-i18next
+  .use(initReactI18next) // passes i18n down to react-i18next
   .init({
     resources,
     lng: "en",

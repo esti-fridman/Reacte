@@ -2,6 +2,7 @@ import { useContext } from "react";
 import Test from "./Test";
 import { useNavigate } from "react-router-dom";
 import ThemeContext from "../context/ThemeContext";
+
 export default function Welcome(props) {
     //context
     const theme = useContext(ThemeContext);

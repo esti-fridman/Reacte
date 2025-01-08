@@ -1,12 +1,14 @@
 import '../i18next'
-import { withNamespaces } from 'react-i18next';
- function ThankYou({t}){
+import { useTranslation } from 'react-i18next';
+ function ThankYou(){
+    const{t}=useTranslation();  
+
     return(
         <>
-        <p> {t("thankYou")} </p>
-        <p >{t("waiting")}</p>
+        <h2> {t("thankYou")} </h2>
+        <h2 >{t("waiting")}</h2>
         </>
         
     )
 }
-export default withNamespaces()(ThankYou)
+export default ThankYou

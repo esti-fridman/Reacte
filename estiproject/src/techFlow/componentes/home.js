@@ -1,15 +1,18 @@
 
 import Galery from "../../lesson_2/componenets/galery"
 import '../i18next'
-import { withNamespaces } from 'react-i18next';
-function Home({t}){
+import { useTranslation } from 'react-i18next';
+
+function Home(){
+    const{t}=useTranslation();  
+
     return(
         <>
             <Galery></Galery>
-             <p>{t("home")}</p>
+             <h1>{t("home")}</h1>
 
         </>
    
     )
 }
-export default withNamespaces()(Home) ;
+export default Home;

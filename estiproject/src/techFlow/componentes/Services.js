@@ -1,8 +1,10 @@
 import '../i18next'
-import { withNamespaces } from 'react-i18next';
- function Servises({t}){
+import { useTranslation } from 'react-i18next';
+ function Servises(){
+    const{t}=useTranslation();  
+
     return(
-        <p>{t("servic")}</p>
+        <h1>{t("services")}</h1>
     )
 }
-export default withNamespaces()(Servises)
+export default Servises

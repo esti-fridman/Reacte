@@ -1,10 +1,12 @@
 
 import '../i18next'
-import { withNamespaces } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
-function About({t}){
+function About(){
+    const{t}=useTranslation();  
+
     return(
-        <p>{t("about")}</p>
+        <h2>{t("about")}</h2>
     )
 }
-export default withNamespaces()(About)
+export default About
