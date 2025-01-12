@@ -15,12 +15,17 @@ export default function Galery(){
     const [images,setImages]=useState([img1,img2,img3,img4,img5])
     const[index,setIndex]=useState(0)
     
-    return(
-        <> 
-            <h1>{t("gallery")}</h1>
-            <button onClick={() =>{if (index>0)setIndex(index-1)}}>🔙</button> 
-            <img src={images[index]}></img>
-            <button onClick={() =>{if (index<4) setIndex(index+1)}}>🔜</button>
+
+    return (
+        <>
+          <h1>{t("gallery")}</h1>
+          <div className="image-container">
+            <button className="left" onClick={() => { if (index > 0) setIndex(index - 1); }}>🔙</button>
+            <img src={images[index]} alt="Gallery" />
+            <button className="right" onClick={() => { if (index < 4) setIndex(index + 1); }}>🔜</button>
+          </div>
         </>
-    )
+      );
+      
+      
 }

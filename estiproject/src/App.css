@@ -36,3 +36,84 @@
     transform: rotate(360deg);
   }
 }
+/* עיצוב כללי לדף */
+body {
+   direction: rtl;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* כדי להבטיח שהכל יהיה במרכז גם בדף ריק */
+  margin: 0;
+  font-family: Arial, sans-serif; /* גופן נעים לקריאה */
+  background-color: #f0f0f0; /* צבע רקע נייטרלי */
+}
+
+/* תמונות */
+img {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%; /* להתאמה למסכים קטנים */
+  height: auto; /* שמירה על פרופורציה */
+}
+
+/* עיצוב לקונטיינר של התמונה */
+.image-container {
+  display: flex; /* שימוש ב-Flexbox */
+  justify-content: center; /* ממקם את התמונה במרכז אופקי */
+  align-items: center; /* ממקם את הכפתורים במרכז אנכי */
+  position: relative; /* נדרש לכפתורים */
+  margin: 0 auto; /* מבטיח שהתמונה נשארת במרכז */
+}
+
+/* תמונה */
+.image-container img {
+  display: block; /* מניעת רווחים מיותרים */
+  max-width: 100%; /* להתאמה למסכים קטנים */
+  height: auto; /* שמירה על פרופורציה */
+}
+
+/* כפתורים */
+.image-container button {
+  position: absolute; /* מיקום יחסי לתמונה */
+  top: 50%; /* ממרכז אותם אנכית */
+  transform: translateY(-50%); /* כוונון למיקום המדויק */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* כפתור שמאלה */
+.image-container button.left {
+  left: 264px; /* מרחק מהקצה השמאלי של התמונה */
+}
+
+/* כפתור ימינה */
+.image-container button.right {
+  right: 264px; /* מרחק מהקצה הימני של התמונה */
+}
+
+
+/* מעבר צבע חלק */
+.image-container button:hover {
+  background-color: #0056b3;
+}
+
+
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* טקסט */
+p, h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  margin: 10px auto;
+}
+
+

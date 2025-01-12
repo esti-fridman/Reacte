@@ -12,7 +12,7 @@ import ThemeContext from '../context/ThenContext';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { useTranslation } from 'react-i18next';
-import i18next from 'i18next';
+
 
 
 function Screen() {

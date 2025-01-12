@@ -13,7 +13,7 @@ function Contact(){
     return(
         <>
         <h1>{t("contact")}</h1>
-        <button onClick={goToThankyou}>{t("contact-btn")}</button>
+        <button  type="button" class="btn btn-outline-primary" onClick={goToThankyou}>{t("contact-btn")}</button>
         </>
         
     )
