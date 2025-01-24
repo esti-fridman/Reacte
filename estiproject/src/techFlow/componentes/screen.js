@@ -33,8 +33,6 @@ function Screen() {
         <Link className="nav-link active rounded-5" to="/about">{t("aboutPage")}</Link>
         <Link className="nav-link active rounded-5" to="/servic">{t("servicPage")}</Link>
         <Link className="nav-link active rounded-5" to="/contact">{t("contactPage")} </Link>
-       
-       
       </nav>
       <Routes>
         <Route path="/" element={<Home/>} />

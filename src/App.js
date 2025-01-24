@@ -5,8 +5,12 @@ import ThemeContext from "./context/ThemeContext";
 import './App.css';
 
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
+
 function App() {
   return (
+    <Provider store={store}>
     <ThemeContext.Provider value="black">
     <BrowserRouter>
       <nav>
@@ -21,6 +25,7 @@ function App() {
       </Routes>
     </BrowserRouter>
     </ThemeContext.Provider>
+    </Provider>
   );
 }
 
