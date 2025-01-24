@@ -74,10 +74,10 @@ img {
 }
 
 /* כפתורים */
-.image-container button {
-  position: absolute; /* מיקום יחסי לתמונה */
-  top: 50%; /* ממרכז אותם אנכית */
-  transform: translateY(-50%); /* כוונון למיקום המדויק */
+/* .image-container button {
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%);
   background-color: #007bff;
   color: white;
   border: none;
@@ -86,7 +86,7 @@ img {
   padding: 10px;
   font-size: 16px;
   transition: background-color 0.3s ease;
-}
+} */
 
 /* כפתור שמאלה */
 .image-container button.left {
@@ -106,9 +106,9 @@ img {
 
 
 
-button:hover {
+/* button:hover {
   background-color: #0056b3;
-}
+} */
 
 /* טקסט */
 p, h1, h2, h3, h4, h5, h6 {

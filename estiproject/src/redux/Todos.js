@@ -1,4 +1,4 @@
-import { UseSelector,useDispatch, useSelector } from "react-redux";
+import {useDispatch, useSelector } from "react-redux";
 import { addToDo,removeToDo } from "./actions";
 import './style.css'
 
@@ -8,26 +8,26 @@ function Todos() {
 
     const handleAddTask = () => {
         
-        const taskName = document.querySelector('[name="taskName"]').value; // שליפת ערך משדה הטקסט
-        const taskDate = document.querySelector('[name="taskDate"]').value; // שליפת ערך משדה התאריך
+        const taskName = document.querySelector('[name="taskName"]').value; 
+        const taskDate = document.querySelector('[name="taskDate"]').value; 
         const taskTime = document.querySelector('[name="taskTime"]').value;
 
-        if (taskName && taskDate) {
-            // הוספת משימה חדשה ל-Redux
+        if (taskName && taskDate && taskTime) {
+       
             dispatch(addToDo({ id: Date.now(), Name: taskName, Date: taskDate,Time: taskTime }));
-            document.querySelector('[name="taskName"]').value = ""; // ניקוי שדה שם המשימה
-            document.querySelector('[name="taskDate"]').value = ""; // ניקוי שדה התאריך
-            document.querySelector('[name="taskTime"]').value = ""; // ניקוי שדה התאריך
+            document.querySelector('[name="taskName"]').value = ""; 
+            document.querySelector('[name="taskDate"]').value = ""; 
+            document.querySelector('[name="taskTime"]').value = ""; 
         }
     };
 
   return (
     <div>
-      <h1>רשימת משימות</h1>
+      <h1>רשימת משימות📆📆</h1>
         <ul>
             {Tasks.map((task) => (
                 <li key={task.id}>
-                    {task.Name} - {task.Date} -{task.Time}
+                    {task.Name} - {task.Date} - {task.Time}
                     <button onClick={() => dispatch(removeToDo(task.id))}  type="button">מחק</button>
                 </li>
             ))}
