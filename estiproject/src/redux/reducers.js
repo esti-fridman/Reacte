@@ -1,4 +1,4 @@
-import { ADD_TODO,REMOVE_TODO } from "./actionTypes";
+import { ADD_TODO,REMOVE_TODO,RESTORE } from "./actionTypes";
 
 const initialState = {
     Tasks:[],
@@ -16,9 +16,11 @@ export const taskManagerReducer = (state=initialState,action)=> {
                 if (task.id!==action.payload.id)
                 newArr.push(task);
             })
-
-            
             return{...state,Tasks:newArr};
+        case RESTORE:
+            return{...state,
+                Tasks:[...state.Tasks,action.payload],      
+              };
         default:
             return state;
     }

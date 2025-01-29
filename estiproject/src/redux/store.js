@@ -1,7 +1,15 @@
-import { createStore } from "redux";
+import { createStore ,combineReducers,applyMiddleware} from "redux";
+import validaitorMiddleware from "./middlewares/walidaitorMiddleware";
 
 import {taskManagerReducer} from './reducers'
+import reciclebinreducer from "./reducerReciclebin";
 
-export const store=createStore(taskManagerReducer);
+const rootReducer=combineReducers({
+     todos:taskManagerReducer,
+    reciclebin:reciclebinreducer,
+});
+
+
+export const store=createStore(rootReducer,applyMiddleware(validaitorMiddleware));
 
 export default store

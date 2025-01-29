@@ -1,106 +1,101 @@
-/* כללי */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f7f6;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  /* עיצוב כללי של הקונטיינר */
-  div {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 600px;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  
-  /* כותרת */
-  h1 {
-    text-align: center;
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  /* רשימת המשימות */
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  /* פריט ברשימה */
-  li {
-    background-color: #f9f9f9;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* כפתור מחיקה */
-  button {
-    background-color: #e74c3c;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #c0392b;
-  }
-  
-  /* טופס הוספת משימה */
-  form {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  /* שדות קלט */
-  input {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  input[type="text"] {
-    font-size: 18px;
-  }
-  
-  input[type="date"],
-  input[type="time"] {
-    font-size: 16px;
-  }
-  
-  /* כפתור הוספה */
-  button[type="button"] {
-    background-color: #3498db;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button[type="button"]:hover {
-    background-color: #2980b9;
-  }
-  
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%; /* Ensure the body takes full width */
+}
+
+.container {
+  display: flex; /* Enable flexbox for child items */
+  justify-content: space-between; /* Space components evenly */
+  gap: 60px; /* Increased spacing between the components */
+  width: 100%; /* Make the container take full width */
+}
+
+div {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex: 1; /* Allow the components to grow equally */
+  padding: 40px; /* Increased padding for more space inside */
+  box-sizing: border-box;
+}
+
+/* כותרת */
+h1 {
+  text-align: center;
+  font-size: 26px; /* Increased font size */
+  color: #333;
+  margin-bottom: 25px; /* Increased margin for better spacing */
+}
+
+/* רשימת המשימות */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* פריט ברשימה */
+li {
+  background-color: #f9f9f9;
+  padding: 12px; /* Increased padding for list items */
+  margin-bottom: 12px; /* Increased margin */
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* כפתור מחיקה */
+button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px; /* Increased button padding */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c0392b;
+}
+
+/* טופס הוספת משימה */
+form {
+  margin-top: 25px; /* Increased top margin */
+  display: flex;
+  flex-direction: column;
+  gap: 18px; /* Increased gap between form fields */
+}
+
+/* שדות קלט */
+input {
+  padding: 12px; /* Increased input padding */
+  font-size: 18px; /* Increased font size */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* כפתור הוספה */
+button[type="button"] {
+  background-color: #3498db;
+  color: white;
+  padding: 12px; /* Increased button padding */
+  border: none;
+  border-radius: 5px;
+  font-size: 18px; /* Increased font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="button"]:hover {
+  background-color: #2980b9;
+}
