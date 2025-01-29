@@ -1,8 +1,8 @@
 import { createStore ,combineReducers,applyMiddleware} from "redux";
 import validaitorMiddleware from "./middlewares/walidaitorMiddleware";
 
-import {taskManagerReducer} from './reducers'
-import reciclebinreducer from "./reducerReciclebin";
+import {taskManagerReducer} from './reducers/reducers'
+import reciclebinreducer from "./reducers/reducerReciclebin";
 
 const rootReducer=combineReducers({
      todos:taskManagerReducer,

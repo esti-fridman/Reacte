@@ -1,4 +1,4 @@
-import { ADD_TODO,REMOVE_TODO,RESTORE } from "./actionTypes";
+import { ADD_TODO,REMOVE_TODO,RESTORE } from "../actionTypes";
 
 const initialState = {
     Tasks:[],

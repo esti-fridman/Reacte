@@ -1,4 +1,4 @@
-import {REMOVE_TODO ,REMOVE_NEVER,RESTORE} from "./actionTypes";
+import {REMOVE_TODO ,REMOVE_NEVER,RESTORE} from "../actionTypes";
 
 const initialState = {
     RecicleBin:[],

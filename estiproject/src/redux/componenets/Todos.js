@@ -1,8 +1,7 @@
 import {useDispatch, useSelector } from "react-redux";
-import { addToDo,removeToDo } from "./actions";
-import { useNavigate } from "react-router-dom"
+import { addToDo,removeToDo } from "../actions";
 import './style.css'
-import RecicleBin from "./Rciclebin";
+
 
 function Todos() {
 
@@ -33,7 +32,7 @@ function Todos() {
             {Tasks.map((task) => (
                 <li key={task.id}>
                     {task.Name} - {task.Date} - {task.Time}
-                    <button onClick={() => dispatch(removeToDo(task))}  type="button">מחק</button>
+                    <button className="remove" onClick={() => dispatch(removeToDo(task))}  >מחק</button>
                 </li>
             ))}
         </ul>

@@ -7,7 +7,7 @@ import About from './about';
 import Services from './Services';
 import Contact from './contact';
 import ThankYou from './Thankyou';
-import RecicleBin from '../../redux/Rciclebin';
+
 
 import ThemeContext from '../context/ThenContext';
 import "bootstrap/dist/css/bootstrap.min.css";

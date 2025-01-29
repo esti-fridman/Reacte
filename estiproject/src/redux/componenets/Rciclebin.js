@@ -1,4 +1,4 @@
-import { removeNever,restore } from "./actions";
+import { removeNever,restore } from "../actions";
 import {useDispatch, useSelector } from "react-redux";
 import './style.css'
 
@@ -14,7 +14,7 @@ function RecicleBin() {
             {tasksRemove.map((task) => (
                 <li key={task.id}>
                     {task.Name} - {task.Date} - {task.Time}
-                    <button onClick={() => dispatch(removeNever(task))}  type="button">מחק </button>
+                    <button className="remove" onClick={() => dispatch(removeNever(task))} >מחק </button>
                     <button onClick={() => dispatch(restore(task))}  type="button">שחזר</button>
                 </li>
             ))}

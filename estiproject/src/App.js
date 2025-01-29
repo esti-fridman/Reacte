@@ -2,10 +2,10 @@
 import './App.css';
 import React from 'react'; 
 import Screen from './techFlow/componentes/screen';
-import Todos from './redux/Todos'
+import Todos from './redux/componenets/Todos'
 import { Provider } from 'react-redux';
 import store from './redux/store';
-import RecicleBin from './redux/Rciclebin';
+import RecicleBin from './redux/componenets/Rciclebin';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
