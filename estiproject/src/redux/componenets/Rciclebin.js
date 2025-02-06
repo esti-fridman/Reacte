@@ -8,7 +8,7 @@ function RecicleBin() {
     const dispatch=useDispatch();
 
   return (
-    <div>
+    <div className="taskDiv">
       <h1> סל המחזור🚮🚮</h1>
         <ul>
             {tasksRemove.map((task) => (

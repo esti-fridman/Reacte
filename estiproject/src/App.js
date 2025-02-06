@@ -7,16 +7,19 @@ import { Provider } from 'react-redux';
 import store from './redux/store';
 import RecicleBin from './redux/componenets/Rciclebin';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Chat from './lesson_7/Chat';
 
 
 function App() {
   return (
-    <Provider store={store}>
-      <div className="container">
-        <Todos />
-        <RecicleBin />
-      </div>
-  </Provider>
+    // <Chat></Chat>
+   <Provider store={store}>
+       <div className='container'> 
+         <Todos />
+        <RecicleBin /> 
+        
+       </div> 
+ </Provider> 
 
 
   );

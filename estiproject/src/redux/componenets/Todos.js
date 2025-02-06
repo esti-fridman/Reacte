@@ -1,6 +1,8 @@
 import {useDispatch, useSelector } from "react-redux";
 import { addToDo,removeToDo } from "../actions";
 import './style.css'
+import React, { useRef, useEffect } from 'react';
+
 
 
 function Todos() {
@@ -10,6 +12,12 @@ function Todos() {
   
    
     const dispatch=useDispatch();
+
+    //שיעור 7-useRef  כדי שהחלון לא יוגדל ותמיד יראו את המשימה האחרונה
+    const AreaRef = useRef(null);
+    useEffect(() => {
+      AreaRef.current.scrollTop = AreaRef.current.scrollHeight;
+  }, [Tasks]);
 
     const handleAddTask = () => {
         
@@ -25,10 +33,11 @@ function Todos() {
     };
 
   return (
-    <div>
+    <div  ref={AreaRef} className="chat-box taskDiv">
       
       <h1>יומן משימות📆📆</h1>
-        <ul>
+      
+      <ul>
             {Tasks.map((task) => (
                 <li key={task.id}>
                     {task.Name} - {task.Date} - {task.Time}
@@ -36,6 +45,8 @@ function Todos() {
                 </li>
             ))}
         </ul>
+   
+        
 
 
         <form>
