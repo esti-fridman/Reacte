@@ -9,18 +9,18 @@ import RecicleBin from './redux/componenets/Rciclebin';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Chat from './lesson_7/Chat';
 
-
+import Somthing3 from './lesson_8/components/Somthing2';
 function App() {
+ 
   return (
-    // <Chat></Chat>
-   <Provider store={store}>
-       <div className='container'> 
-         <Todos />
-        <RecicleBin /> 
-        
-       </div> 
- </Provider> 
-
+//     <Chat></Chat>
+//  <Provider store={store}>
+//        <div className='container'> 
+//          <Todos />
+//         <RecicleBin /> 
+//        </div> 
+//  </Provider>  
+<Somthing3></Somthing3>
 
   );
 }
