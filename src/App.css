@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #86e18e;
+  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -37,9 +37,82 @@
   }
 }
 
-.h1-black{
-  color: brown;
+body {
+   direction: rtl;
+  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; 
 }
-.h1-white{
-  color: rgb(12, 8, 8);
+
+
+img {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%; 
+  height: auto; 
 }
+
+
+.image-container {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  position: relative; 
+  margin: 0 auto; 
+}
+
+
+.image-container img {
+  display: block; 
+  max-width: 100%; 
+  height: auto; 
+}
+
+ .image-container button {
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%);
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+} 
+
+
+.image-container button.left {
+  left: 264px;
+}
+
+
+.image-container button.right {
+  right: 264px; 
+}
+
+
+
+.image-container button:hover {
+  background-color: #0056b3;
+} 
+
+
+
+ button:hover {
+  background-color: #0056b3;
+} 
+
+
+p, h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  margin: 10px auto;
+} 
+
+ */
